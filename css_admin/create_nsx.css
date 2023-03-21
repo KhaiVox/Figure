@@ -1,0 +1,88 @@
+.create {
+    margin-top: calc(var(--header-height) + var(--header-sub) + 32px);
+    margin-bottom: 180px;
+}
+
+.create-header {
+    font-size: 3.2rem;
+    font-weight: 600;
+    color: #000;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.create-item {
+    color: #000;
+    margin-top: 24px;
+    font-weight: 600;
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: center;
+}
+
+.create-title {
+    width: 92px;
+    text-align: start;
+}
+
+.create-input {
+    width: 300px;
+}
+
+.create-upload:hover {
+    border: 1px solid rgb(129, 24, 24);
+}
+
+.create-upload:hover .create-icon {
+    color: var(--dark-red-color);
+}
+
+.create-upload {
+    padding: 55px 132px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.create-icon {
+    color: #ccc;
+    font-size: 2.8rem;
+    transition: 0.4s;
+}
+
+
+/* Create Button */
+
+.create-button {
+    margin-top: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 120px;
+}
+
+.create-quit:hover {
+    color: var(--light-red-color);
+}
+
+.create-quit {
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-right: 24px;
+}
+
+.create-confirm:hover {
+    color: var(--white-color);
+    background-color: var(--dark-red-color);
+}
+
+.create-confirm {
+    font-size: 1.6rem;
+    font-weight: 500;
+    height: 38px;
+    width: 120px;
+    float: right;
+    color: var(--white-color);
+    background-color: var(--light-red-color);
+}

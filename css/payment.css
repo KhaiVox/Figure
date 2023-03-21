@@ -1,0 +1,161 @@
+.payment {
+    margin-top: calc(var(--header-height) + var(--header-sub) + 32px);
+    margin-bottom: 180px;
+}
+
+.payment-header {
+    text-align: center;
+}
+
+.payment-heading {
+    font-size: 3.2rem;
+    font-weight: 600;
+    color: #000;
+}
+
+.payment-body {
+    padding: 32px 60px;
+}
+
+
+/* Payment Product */
+
+.product-list-payment {
+    padding-right: 60px;
+}
+
+.product-payment-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 5px;
+}
+
+.product-payment-img {
+    width: 70px;
+    border-radius: 3px;
+}
+
+.product-payment-wrap strong {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-left: 18px;
+}
+
+.product-payment-quantity,
+.product-payment-price {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.payment-total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid rgb(88, 88, 88);
+    margin-top: 36px;
+    padding-top: 24px;
+}
+
+.payment-total-title {
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.payment-total-number {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+
+/* Payment Info */
+
+.payment-list-info {
+    /* margin-left: 60px; */
+    border-left: 2px solid rgb(88, 88, 88);
+    padding-left: 60px;
+}
+
+.payment-item {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.6rem;
+}
+
+.payment-item p {
+    width: 132px;
+    display: inline-block;
+}
+
+.payment-item span {
+    margin-left: 18px;
+}
+
+.payment-method {
+    margin-top: 36px;
+}
+
+.payment-title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.form-control {
+    width: 80%;
+    border: none;
+    cursor: pointer;
+    height: 36px;
+}
+
+.payment-check {
+    display: block;
+}
+
+.payment-check input {
+    zoom: 1.4;
+    margin-top: 12px;
+    /* Màu khi check */
+    accent-color: var(--light-red-color);
+}
+
+.payment-check span {
+    font-size: 1.6rem;
+    font-weight: 400;
+    position: relative;
+    top: -4px;
+    margin-left: 5px;
+    user-select: none;
+}
+
+.payment-button {
+    margin-top: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.payment-quit:hover {
+    color: var(--light-red-color);
+}
+
+.payment-quit {
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-right: 24px;
+}
+
+.payment-confirm:hover {
+    color: var(--white-color);
+    background-color: var(--dark-red-color);
+}
+
+.payment-confirm {
+    font-size: 1.6rem;
+    font-weight: 500;
+    height: 38px;
+    float: right;
+    margin-right: 60px;
+    color: var(--white-color);
+    background-color: var(--light-red-color);
+}

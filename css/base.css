@@ -1,0 +1,71 @@
+:root {
+    --primary-color: #000;
+    --white-color: #fff;
+    --text-color: #dcdcdc;
+    --border-color: #ccc;
+    --hover-color: rgb(238, 238, 238);
+    --light-red-color: #c30005;
+    --dark-red-color: #9c0004;
+    --dark-blue-color: #3a5180;
+    --facebook-color: #3b5999;
+    --twitter-color: #46c1f6;
+    --instagram-color: #e1306c;
+    --youtube-color: #de463b;
+    --header-height: 68px;
+    --header-sub: 52px;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.65%;
+    line-height: 16px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Exo 2', sans-serif;
+}
+
+
+/* Thanh Scroll */
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--dark-red-color);
+    border-radius: 100rem;
+}
+
+body::-webkit-scrollbar-track {
+    /* background-color: blue; */
+    /* border-radius: 100rem; */
+}
+
+
+/* Animation */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes growth {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

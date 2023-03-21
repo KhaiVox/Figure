@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Link reset css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <!-- Link Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Link css -->
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/introduce.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <!-- Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <!-- Link icon -->
+    <!-- <link rel="stylesheet" href="/fonts/fontawesome-free-6.0.0-web/css/all.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+</head>
+
+<body>
+
+    <div class="app">
+        <header class="header">
+            <div class="container">
+                <!-- Header Navigation -->
+                <nav class="header__navbar">
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item">
+                            <label for="nav-mobile-input" class="header-menu">
+                                <i class="header-menu-icon fa-solid fa-bars"></i>
+                            </label>
+                            <input type="checkbox" class="nav__input" id="nav-mobile-input">
+                            <div class="nav__overlay"></div>
+                            <label for="nav-mobile-input" class="nav__overlay"></label>
+
+                            <!-- Menu -->
+                            <nav class="menu">
+                                <div class="nav__header">
+                                    <div class="nav__header-item">
+                                        <a href="" class="nav__mobile-item-link">
+                                            <img src="./img/logo.png" alt="logo" class="nav__mobile-logo">
+                                        </a>
+                                    </div>
+                                    <label for="nav-mobile-input" class="nav__header-item">
+                                        <i class="nav__header-icon fa-solid fa-xmark"></i>
+                                    </label>
+                                </div>
+                                <div class="nav__mobile-list">
+                                    <li class="nav__mobile-item">
+                                        <i class="nav__mobile-icon fa-solid fa-user"></i>
+                                        <a href="" class="nav__mobile-item-link">
+                                            Tài khoản
+                                        </a>
+                                    </li>
+                                    <li class="nav__mobile-item">
+                                        <i class="nav__mobile-icon fa-solid fa-bag-shopping"></i>
+                                        <a href="http://192.168.0.115:5502/cart.html" class="nav__mobile-item-link">
+                                            Giỏ hàng
+                                        </a>
+                                    </li>
+                                    <li class="nav__mobile-item">
+                                        <!-- <i class="nav__mobile-icon fa-solid fa-bars-staggered"></i> -->
+                                        <i class="nav__mobile-icon fa-solid fa-list-ul"></i>
+                                        <a href="" class="nav__mobile-item-link">
+                                            Danh mục
+                                        </a>
+                                        <label for="drop-down">
+                                            <i class="nav__mobile-icon nav__mobile-icon-down fa-solid fa-chevron-down"></i>
+                                        </label>
+
+                                        <input type="checkbox" hidden name="" class="nav__mobile-drop-down" id="drop-down">
+
+                                        <ul class="nav__category">
+                                            <li class="nav__category-item">
+                                                <a href="" class="nav__category-item-link">Scale</a>
+                                            </li>
+                                            <li class="nav__category-item">
+                                                <a href="" class="nav__category-item-link">Figma</a>
+
+                                            </li>
+                                            <li class="nav__category-item">
+                                                <a href="" class="nav__category-item-link">Nendoroid</a>
+                                            </li>
+                                            <li class="nav__category-item">
+                                                <a href="" class="nav__category-item-link">Game Prize</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav__mobile-item">
+                                        <i class="nav__mobile-icon fa-solid fa-circle-question"></i>
+                                        <a href="" class="nav__mobile-item-link">
+                                            Giới thiệu
+                                        </a>
+                                    </li>
+                                    <li class="nav__mobile-item">
+                                        <i class="nav__mobile-icon fa-solid fa-newspaper"></i>
+                                        <a href="" class="nav__mobile-item-link">
+                                            Tin tức
+                                        </a>
+                                    </li>
+                                    <div class="nav--seperate"></div>
+                                    <li class="nav__mobile-item">
+                                        <i class="nav__mobile-icon fa-solid fa-arrow-right-from-bracket"></i>
+                                        <a href="" class="nav__mobile-item-link">
+                                            Đăng xuất
+                                        </a>
+                                    </li>
+                                    <div class="menu-contact">
+                                        <h2>Liên hệ với chúng tôi</h2>
+                                        <div class="social-menu">
+                                            <a href="" class="social-menu__icon facebook">
+                                                <i class="fab fa-facebook-f"></i>
+                                            </a>
+                                            <a href="" class="social-menu__icon twitter">
+                                                <i class="fab fa-twitter"></i>
+                                            </a>
+                                            <a href="" class="social-menu__icon instagram">
+                                                <i class="fab fa-instagram"></i>
+                                            </a>
+                                            <a href="" class="social-menu__icon youtube">
+                                                <i class="fab fa-youtube"></i>
+                                            </a>
+                                        </div>
+                                        <p class="menu-footer">Copyright © 2022 VKPA-STORE</p>
+                                    </div>
+                                </div>
+                            </nav>
+
+                            <a href="#my-modal" class="header__navbar-login hide-on-mobile-ipad">
+                                <strong>Đăng Nhập / Đăng Ký</strong>
+                            </a>
+                        </li>
+
+                        <li class="header__navbar-item">
+                            <a href="/" class="header__navbar-logo-link">
+                                <div class="header__navbar-logo-img" style="background-image: url(/img/logo.png);"></div>
+                            </a>
+                        </li>
+
+                        <li class="header__navbar-item">
+                            <div class="header__navbar-wrap">
+                                <div class="header__navbar-search">
+                                    <i class="header__navbar-icon-search fas fa-search"></i>
+                                    <div class="header__search-input-wrap">
+                                        <input type="text" class="header__search-input" placeholder="Tìm kiếm...">
+                                        <i class="header__search-input-icon fas fa-search"></i>
+                                    </div>
+                                </div>
+                                <a href="" class="header__navbar-bag hide-on-mobile-ipad">
+                                    <strong class="">Giỏ Hàng</strong>
+                                    <i class="header__navbar-icon-bag fa-solid fa-cart-shopping"></i>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- Header Sub -->
+            <div class="header__sub">
+                <div class="header__sub-wrap hide-on-mobile">
+                    <ul class="header__sub-list">
+                        <li class="header__sub-item header__sub-item-active">
+                            <a href="" class="header__sub-item-link">Trang chủ</a>
+                        </li>
+                        <li class="header__sub-item">
+                            <a href="" class="header__sub-item-link">
+                                Danh mục
+                                <i class="header__sub-item-icon fas fa-chevron-down"></i>
+                            </a>
+                            <ul class="header__sub-description-list">
+                                <li class="header__sub-description-item">
+                                    <a class="header__sub-description-item-link" href="#scale">Scale</a>
+                                </li>
+                                <li class="header__sub-description-item">
+                                    <a class="header__sub-description-item-link" href="#figma">Figma</a>
+                                </li>
+                                <li class="header__sub-description-item">
+                                    <a class="header__sub-description-item-link" href="#nendoroid">Nendoroid</a>
+
+                                </li>
+                                <li class="header__sub-description-item">
+                                    <a class="header__sub-description-item-link" href="#game-prize">Game prize</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="header__sub-item">
+                            <a href="" class="header__sub-item-link">
+                                Giới thiệu
+                                <i class="header__sub-item-icon fas fa-chevron-down"></i>
+                            </a>
+                            <ul class="header__sub-description-list">
+                                <li class="header__sub-description-item">
+                                    <a class="header__sub-description-item-link" href="">Về Figure</a>
+                                </li>
+                                <li class="header__sub-description-item">
+                                    <a class="header__sub-description-item-link" href="">Về Figma</a>
+                                </li>
+                                <li class="header__sub-description-item">
+                                    <a class="header__sub-description-item-link" href="">Về Scale</a>
+                                </li>
+                                <li class="header__sub-description-item">
+                                    <a class="header__sub-description-item-link" href="">Về Game prize</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header__sub-item">
+                            <a href="" class="header__sub-item-link">Tin tức</a>
+                        </li>
+                        <li class="header__sub-item">
+                            <a href="#figure" class="header__sub-item-link">Liên hệ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <div class="introduce">
+            <div class="introduce-header">
+                <div class="container">
+                    <div class="row">
+                        <div class="introduce-item col-lg-6">
+                            <h1 class="introduce-heading">Figures là gì ?</h1>
+                            <div class="introduce-description">
+                                Figure là từ tiếng anh dịch sang tiếng việt có nghĩa là nhân vật tượng trưng, hình minh họa. Bạn có thể hiểu đơn giản Figure tương tự như một bức tượng về một nhân vật nào đó trong truyện hoặc phim hoạt hình chẳng hạn. Nó là loại hình giải trí phổ biến
+                                của dân Otaku (chủ yếu là người yêu thích anime và manga tại Nhật Bản)
+                            </div>
+                        </div>
+                        <div class="introduce-item col-lg-6">
+                            <img class="introduce-img-header" src="https://ae01.alicdn.com/kf/Hfdcbecba8d1a4009a1a13e42d7915991A/Demon-Slayer-Daki-And-Giyuutarou-GK-Resin-Limited-Statue-Figure.jpg_Q90.jpg_.webp" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="introduce-category">
+                <section id="figure">
+                    <div class="container">
+                        <div class="row">
+                            <h1 class="introduce-heading">Figures gồm những loại nào ?</h1>
+                            <div class="introduce-item col-lg-6">
+                                <h2 class="introduce-name">Figmas</h2>
+                                <div class="introduce-description">
+                                    Figma là sự kết hợp giữa PVC figure và Nendoroid. Tay, chân của chúng ở dòng này có thể tùy biến dễ dàng như Nendoroid, nhưng không đẹp bằng, bởi figure này có thể cử động nhờ các khớp nhựa tròn, trông không thật và giống với búp bê hơn.
+                                </div>
+                            </div>
+                            <div class="introduce-item col-lg-6">
+                                <h2 class="introduce-name">Scale</h2>
+                                <div class="introduce-description">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit et optio quae sunt cupiditate, numquam, similique, quasi voluptas fugiat vero quibusdam omnis iste neque reiciendis quos commodi repudiandae. Veniam, incidunt. Odio minus sapiente quasi aliquam,
+                                    iste fugiat porro, officiis amet sit voluptatum voluptate impedit. Explicabo dolores veritatis laboriosam delectus, laudantium eaque quasi! Vel iure id cupiditate quidem, eveniet impedit molestias praesentium! Voluptatum
+                                    repellendus error facere beatae ipsa rem vero, rerum culpa animi? Minus, laudantium illo cumque dolorum veritatis harum dignissimos officiis quasi aut similique error rem odit soluta explicabo delectus voluptate. Corrupti
+                                    et, est iste veniam officia aliquam quisquam distinctio.
+                                </div>
+                            </div>
+                            <div class="introduce-item col-lg-6">
+                                <h2 class="introduce-name">Nendoroid</h2>
+                                <div class="introduce-description">
+                                    Đây là 1 dạng mới của PVC figure, nhưng khác hẳn về ngoại hình. Nendoroid có đầu to, mình nhỏ theo phong cách chibi, có thể thay đổi cảm xúc bằng các mẫu đi kèm, thậm chí có thể đổi đầu, tay, chân, phụ kiện cho các bé Nendoroid khác nhau. Ngoài ra, người
+                                    chơi có thể tạo dáng cho các em này. Do mang phong cách chibi nên loại figure này dễ thương hơn so với các loại khác. Hiện nay Nendoroid có thêm một nhánh nhỏ gọi là Nedoroid Puchi (Petite hay Petit). Loại này bé hơn
+                                    một tí, thường không có khuôn mặt khác và phụ kiện đi kèm, và một hộp thường gồm nhiều bé. Giá thành rẻ hơn.
+                                </div>
+                            </div>
+                            <div class="introduce-item col-lg-6">
+                                <h2 class="introduce-name">Game Prize</h2>
+                                <div class="introduce-description">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi libero ut quos qui magnam repudiandae, minus est, itaque enim dolores cupiditate vitae ipsum ea totam aliquam veritatis perferendis? Quisquam illum cupiditate ad impedit optio. Earum id
+                                    deserunt suscipit cumque accusantium ratione, minus magnam ex aut cupiditate quam dolorum distinctio, dolorem sit minima vero blanditiis unde iusto? Nemo rem eos veritatis consequuntur deserunt tempore, eum animi voluptatum.
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="introduce-detail">
+                <div class="container">
+                    <div class="introduce-item">
+                        <h1 class="introduce-heading">Một số đặc điểm của Nendoroid</h1>
+                        <div class="introduce-description">
+                            Phần lớn, các nhân vật Nendoroid đều được chế tác từ nhựa ABS và PVC cao cấp và chúng đều có thiết kế theo phong cách chibi, tức là phần đầu khá lớn, còn phần thân lại khá nhỏ hoặc mô hình siêu biến dạng. Mỗi nhân vật đều có những tư thế, với các khuôn
+                            mặt cùng với nhiều biểu cảm khác nhau, nhằm mang đến nét dễ thương, ngộ nghĩnh, tạo sự chú ý của người chơi. Hiện nay Nendoroid có thêm một nhánh nhỏ gọi là Nedoroid Puchi (Petite hay Petit). Loại này bé hơn một tí, thường
+                            không có khuôn mặt khác và phụ kiện đi kèm, và một hộp thường gồm nhiều bé. Các nhân vật Nendoroid được thiết kế khá thông minh, các bộ phận như chân, cánh tay, cổ đều có khớp nối nhằm cho phép mức độ chuyển động, người chơi
+                            có thể tạo dáng linh hoạt một cách dễ dàng. Ngoài ra, Nendoroid cũn có trang bị thêm các thiết bị khác như vũ khí chiến đấu, vật phẩm của mỗi nhân vật để giúp mỗi nhân vật thêm sống động hơn.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="introduce-footer">
+                <div class="container">
+                    <div class="row">
+                        <h1 class="introduce-heading">Hướng dẫn cách vệ sinh và bảo quản Nendoroid ?</h1>
+                        <div class="introduce-item col-lg-7">
+                            <h2 class="introduce-name">Các mẹo vệ sinh Nendoroid đơn giản</h2>
+                            <div class="introduce-description">
+                                Trong thời gian sử dụng, các bé Nendoroid sẽ bị xuống sắc và bụi bẩn sẽ bám vào là điều không thể tránh. Để nhân vật luôn giữ nét thanh xuân của mình thì các bạn cần vệ sinh đúng cách. Điều này sẽ giúp các nhân vật Nendoroid được sạch sẽ, mới mẻ và bền
+                                lâu hơn. Sau đây là một số mẹo đơn giản mà bạn có thể tự thực hiện. Vệ sinh các bé Nendoroid là điều cần thiết, nhưng không nên quá nhiều, có thể 1-2 tuần vệ sinh một lần. Và để lau bụi bẩn thì có thể sử dụng khăn giấy
+                                hoặc vải mềm có khả năng giữ bụi tốt, tránh gây trầy xước nhân vật, hoặc có thể dùng các cọ nhỏ để quét những bụi bám tại các khớp ở cổ, tay, chân. Nếu các nhân vật không được sơn phủ, các bạn nên sử dụng loại bông vệ sinh
+                                tai, thấm ít nước rồi từ từ lau nhẹ để thấm bụi, đồng thời hạn chế làm hư hỏng các đường panel line và decal. Nhưng nếu các bé yêu Nendoroid đã được sơn phủ thì có thể tắm bằng nước hoặc xà phòng. Và khi tắm nên tháo các
+                                mô hình để đảm bảo vệ sinh sạch sẽ tại các khớp. Sau đó, cần xả nước làm sạch xà phòng, tránh việc xà phòng còn dinh trên mô hình sẽ khiến nhân vật nhanh bị hư hỏng.
+                            </div>
+                        </div>
+                        <div class="introduce-item col-lg-5">
+                            <h2 class="introduce-name">Cách bảo quản Nendoroid cẩn thận</h2>
+                            <div class="introduce-description">
+                                Các sản phẩm nhân vật Nendoroid đều được sản xuất bởi nhựa ABS và PVC do đó sẽ bị đổi màu, dễ giòn gãy nếu bị ánh nắng chiếu trực tiếp vào. Do đó, khi chơi xong cần cất các bé Nendoroid trên kệ tủ hoặc trong tủ kính, tránh gần cửa sổ nơi ánh sáng chiếu
+                                vào. Nên trưng bày các bé Nendoroid trong tủ kính, sẽ giúp mô hình trông nổi bật, đồng thời có thể hạn chế va chạm, rơi xuống đất và bụi bặm bu bám vào. Không nên để mô hình Nendoroid gần các nguồn nhiệt, hoặc tiếp xúc
+                                với nước quá nhiều. Các phụ kiện của mô hình nên được sắp xếp và phân loại rõ ràng để tránh làm thất lạc.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
